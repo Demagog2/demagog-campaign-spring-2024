@@ -30,9 +30,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install ESLint
+      - name: Install dev dependendencies & special formatter
         run: |
-          npm install eslint@8.10.0
+          npm install
           npm install @microsoft/eslint-formatter-sarif@2.1.7
 
       - name: Run ESLint
