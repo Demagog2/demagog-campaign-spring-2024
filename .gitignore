@@ -1,0 +1,2 @@
+# Exclude JavaScript dependencies
+/node_modules/
