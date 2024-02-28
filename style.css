@@ -12,6 +12,11 @@ TO DO:
 - "přehrát video" má na hover poskočit, zkoušela jsem udělat hover s paddingem, ale skáče to i s pozadím, tak nevim, nápady vyčerpány
 */
 
+/* Reset default browser margin & padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 .logo-demagog {
   width: 98px;
