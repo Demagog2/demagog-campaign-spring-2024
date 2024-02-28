@@ -13,7 +13,8 @@ TO DO:
 */
 
 /* Reset default browser margin & padding */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -35,17 +36,17 @@ body, html {
 
 .page-1 {
   display: block;
-  background: url(./images/obrazek-telka-small.png), lightgray 50% / cover no-repeat;
+  background: url('./images/obrazek-telka-small.png'), lightgray 50% / cover no-repeat;
 }
 
 .page-2 {
   display: none;
-  background-image: url('./images/obrázek-maska-small.png');
+  background-image: url('./images/obrazek-maska-small.png');
 }
 
 .page-3 {
   display: none;
-  background-image: url('./images/obrázek-sundana-maska-small.png');
+  background-image: url('./images/obrazek-sundana-maska-small.png');
 }
 
 .header-orange {
