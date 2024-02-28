@@ -327,11 +327,11 @@ TO DO:
 }
 
 .arrow-fwd-btn {
-  background-image: url('./images/šipka-vpred-small.svg');
+  background-image: url('./images/arrow-fwd-small.svg');
 }
 
 .arrow-bckw-btn {
-  background-image: url('./images/šipka-zpet-small.svg');
+  background-image: url('./images/arrow-back-small.svg');
 }
 
 .arrow-fwd-btn-page1 {
@@ -551,13 +551,13 @@ TO DO:
   }
 
   .arrow-fwd-btn {
-    background-image: url(./images/šipka-vpred-big.svg);
+    background-image: url(./images/arrow-fwd-big.svg);
     width: 33px;
     height: 57px;
   }
 
   .arrow-bckw-btn {
-    background-image: url(./images/šipka-zpet-big.svg);
+    background-image: url(./images/arrow-back-big.svg);
     width: 33px;
     height: 57px;
   }
