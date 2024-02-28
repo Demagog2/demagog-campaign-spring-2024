@@ -1,0 +1,624 @@
+/* 
+
+OTAZKY: 
+1) tlačítko šipky jde zmáčknout i v blízkém okolí šipky, kde ale šipka vidět není. Asi o nic nejde, ale není to moc profi, ne?
+2) page3 tlačítka buttons-page3 mají mít podle figmy šířku 366px, iphone SE má šířku 375, takže je to zrovna tam skoro od kraje ke kraji..?
+3) stránka tři je trochu na punk.. kdybych dávala tu část s partnery projektu podle figmy, tak se na menších desktopech překrývají s textem "přehrát video"
+
+
+TO DO:
+- dodelat hover sipek arrow-btn
+- dodelat fill tech kolecek na strance 2
+- "přehrát video" má na hover poskočit, zkoušela jsem udělat hover s paddingem, ale skáče to i s pozadím, tak nevim, nápady vyčerpány
+*/
+
+
+.logo-demagog {
+  width: 98px;
+  height: 30px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+.page {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.page-1 {
+  display: block;
+  background: url(./images/obrazek-telka-small.png), lightgray 50% / cover no-repeat;
+}
+
+.page-2 {
+  display: none;
+  background-image: url('./images/obrázek-maska-small.png');
+}
+
+.page-3 {
+  display: none;
+  background-image: url('./images/obrázek-sundana-maska-small.png');
+}
+
+.header-orange {
+  color: #FFBF00;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-container-page1 {
+  margin-top: 60vh;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.header-container-page2 {
+  margin-top: 40vh;
+}
+
+.header-container-page3 {
+  margin-top: 34vh;
+}
+
+.header-white {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-white-page2 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-page3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+
+.header-orange-page3 {
+  color: #FFBF00;
+  font-weight: 900;
+}
+
+.text-container-page2 {
+  margin-left: 30px;
+  margin-top: 29px;
+}
+
+.text-section1-page2,
+.text-section2-page2 {
+  display: flex;
+  align-items: center;
+}
+
+.text-section1-page2 {
+  margin-bottom: 50px;
+}
+
+.cake-graph {
+  padding-right: 27px;
+}
+
+.text-white {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  padding-right: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text-orange {
+  color: #FFBF00;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 23px;
+}
+
+.additional-info {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 43px;
+  margin-bottom: 30px;
+  padding-right: 23px;
+
+}
+
+.text-page3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+}
+
+.text-orange-page3 {
+  color: #FFBF00;
+  font-weight: 800;
+}
+
+.buttons-container1-page3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons-container2-page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 366px;
+}
+
+.buttons-page3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  height: 38px;
+  width: 100%;
+  border-radius: 32.5px;
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(2px);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.btn-top {
+  margin-bottom: 16px;
+}
+
+.video-container-page3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 13px;
+}
+
+.play-video-icon {
+  background-image: url('./images/play-video.svg');
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+
+}
+
+.play-video-text {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  margin: 0px;
+  margin-left: 8px;
+}
+
+
+
+.partners-p {
+  color: #E5E7EB;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.partners-container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-container1-page1 {
+  margin-top: 56px;
+}
+
+.partners-container1-page2 {
+  margin-top: 30px;
+}
+
+.partners-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.partners-container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-cedmo {
+  width: 90px;
+  height: 51px;
+  margin-right: 33px;
+}
+
+.logo-ct {
+  width: 89px;
+  height: 13px;
+}
+
+.arrows-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrows-container2 {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 23px;
+  margin-bottom: 26px;
+}
+
+.arrow-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 25px;
+}
+
+.arrow-fwd-btn {
+  background-image: url('./images/šipka-vpred-small.svg');
+}
+
+.arrow-bckw-btn {
+  background-image: url('./images/šipka-zpet-small.svg');
+}
+
+.arrow-fwd-btn-page1 {
+  visibility: visible;
+}
+
+.arrow-bckw-btn-page1 {
+  visibility: hidden;
+}
+
+.arrow-bckw-btn-page2 {
+  visibility: visible;
+}
+
+.arrow-bckw-btn-page3 {
+  visibility: visible;
+}
+
+.arrow-fwd-btn-page3 {
+  visibility: hidden;
+}
+
+
+@media screen and (min-width: 992px) {
+  .page-1 {
+    background-image: url('./images/obrazek-telka-big.png');
+    height: 100%;
+  }
+
+  .page-2 {
+    background-image: url('./images/obrazek-maska-big.jpeg');
+  }
+
+  .page-3 {
+    background-image: url('./images/obrazek-sundana-maska-big.jpeg');
+  }
+
+  .logo-demagog {
+    width: 183px;
+    height: 55px;
+    padding-top: 41px;
+    padding-left: 96px;
+  }
+
+  .header-container-page1 {
+    margin-top: 47vh;
+    padding-left: 131px;
+  }
+
+  .header-container-page2 {
+    margin-top: 30vh;
+  }
+
+  .header-container-page3 {
+    margin-top: 23vh;
+  }
+
+  .header-dezinformace {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 125px;
+    padding-left: 96px;
+  }
+
+  .header {
+    font-size: 96px;
+    line-height: 125px;
+    padding-left: 96px;
+    margin-top: 0px;
+  }
+
+  .header-orange {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 125px;
+  }
+
+  .header-white {
+    font-size: 96px;
+    line-height: 125px;
+  }
+
+  .header-white-page2 {
+    font-size: 96px;
+    line-height: 125px;
+    margin-left: 141px;
+    margin-right: 141px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .header-page3 {
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125px;
+    padding-left: 171px;
+    padding-right: 171px;
+    margin-bottom: 28px;
+  }
+
+  .header-orange-page3 {
+    font-weight: 800;
+  }
+
+  .header .text-container-page2 {
+    margin-left: 141px;
+  }
+
+  .text-section1-page2 {
+    margin-bottom: 43px;
+    margin-top: 48px;
+    align-items: center;
+  }
+
+  .text-section2-page2 {
+    align-items: center;
+  }
+
+  .text-white {
+    font-size: 30px;
+    line-height: 40px;
+    padding-right: 140px;
+  }
+
+  .text-orange {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .cake-graph {
+    width: 97px;
+    height: 97px;
+  }
+
+  .additional-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 12px;
+    margin-left: 150px;
+  }
+
+  .text-page3 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 177px;
+    padding-right: 177px;
+    margin-bottom: 51px;
+  }
+
+  .text-orange-page3 {
+    text-decoration-line: underline;
+  }
+
+  .buttons-container2-page3 {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 88vw;
+  }
+
+  .buttons-page3 {
+    font-size: 20px;
+    text-wrap: nowrap;
+    padding: 0 10px;
+  }
+
+  .buttons-page3:hover {
+    background-color: #FFBF00;
+    color: black;
+    border-color: #FFBF00;
+    transition: all .4s ease;
+  }
+
+  .btn-top {
+    margin-bottom: 0px;
+    margin-right: 42px;
+  }
+
+  .video-container-page3 {
+    margin-top: 63px;
+    margin-bottom: 63px;
+    padding-top: 0px;
+  }
+
+  .play-video-icon {
+    width: 29px;
+    height: 29px;
+    margin-right: 13.5px;
+  }
+
+  .play-video-text {
+    font-size: 24px;
+    margin-left: 13.5px;
+  }
+
+  .play-video-text:hover {
+    color: #FFBF00;
+  }
+
+  .arrows-container2 {
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .arrows-container1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .arrow-fwd-btn {
+    background-image: url(./images/šipka-vpred-big.svg);
+    width: 33px;
+    height: 57px;
+  }
+
+  .arrow-bckw-btn {
+    background-image: url(./images/šipka-zpet-big.svg);
+    width: 33px;
+    height: 57px;
+  }
+
+  .arrow-fwd-btn .arrow-bckw-btn {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 57px;
+    background-color: inherit;
+    border: none;
+  }
+
+  .arrow-btn {
+    width: 33px;
+    height: 57px;
+  }
+
+  .logo-ct {
+    width: 160px;
+    height: 23px;
+  }
+
+  .partners-container-1 {
+    align-items: flex-end;
+    padding-right: 73px;
+    padding-bottom: 65px;
+  }
+
+  .partners-container1-page1 {
+    margin-top: 47px;
+  }
+
+  .logo-cedmo {
+    width: 162px;
+    height: 90px;
+    margin-right: 57px;
+  }
+
+  .partners-p {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (min-width: 1390px) {
+  .partners-container-1 {
+    padding-bottom: 0px;
+  }
+
+  .video-container-page3 {
+    margin-bottom: 115px;
+  }
+
+  .partners-container1-page3 {
+    position: relative;
+  }
+
+  .partners-container2-page3 {
+    position: absolute;
+    bottom: 65px;
+    right: 73px;
+  }
+}
