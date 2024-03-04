@@ -109,6 +109,7 @@ html {
   padding-right: 17px;
   margin-bottom: 12px;
   margin-top: 0px;
+  text-shadow: #141313 2px 2px 50px;
 }
 
 .header-orange-page3 {
@@ -179,6 +180,7 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
+  text-shadow: #141313 2px 2px 50px;
 }
 
 .text-orange-page3 {
@@ -385,6 +387,7 @@ html {
   .header-container-page1 {
     margin-top: 47vh;
     padding-left: 131px;
+    text-shadow: #141313 2px 2px 50px;
   }
 
   .header-container-page2 {
@@ -427,6 +430,7 @@ html {
     margin-right: 141px;
     padding-left: 0px;
     padding-right: 0px;
+    text-shadow: #141313 2px 2px 50px;
   }
 
   .header-page3 {
@@ -445,6 +449,7 @@ html {
 
   .header .text-container-page2 {
     margin-left: 141px;
+    text-shadow: #141313 2px 2px 50px;
   }
 
   .text-section1-page2 {
