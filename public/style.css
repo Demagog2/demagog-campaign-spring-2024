@@ -498,9 +498,7 @@ html {
   .text-page3 {
     font-size: 30px;
     line-height: 40px;
-    padding-left: 177px;
-    padding-right: 177px;
-    margin-bottom: 51px;
+    max-width: 690px;
   }
 
   .text-orange-page3 {
@@ -619,6 +617,35 @@ html {
 
   .partners-p {
     font-size: 15px;
+  }
+
+  .blur-bg {
+    position: relative;
+    display: inline-block;
+    margin-left: 170px;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+
+  .blur-bg p {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blur-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 22px;
+    background: rgba(0, 0, 0, 0.20);
+    filter: blur(17.5px);
+    backdrop-filter: blur(2px);
   }
 }
 
