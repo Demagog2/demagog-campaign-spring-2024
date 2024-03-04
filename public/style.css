@@ -34,8 +34,11 @@ html {
   background-size: cover;
 }
 
+.hidden {
+  display: none;
+}
+
 .page-1 {
-  display: block;
   background: url('./images/obrazek-telka-small.png'), lightgray 50% / cover no-repeat;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +46,6 @@ html {
 }
 
 .page-2 {
-  display: none;
   background-image: url('./images/obrazek-maska-small.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -51,7 +53,6 @@ html {
 }
 
 .page-3 {
-  display: none;
   background-image: url('./images/obrazek-sundana-maska-small.png');
   background-repeat: no-repeat;
   background-position: center;
