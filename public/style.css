@@ -17,6 +17,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .logo-demagog {
@@ -31,22 +32,30 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
 }
 
 .page-1 {
   display: block;
   background: url('./images/obrazek-telka-small.png'), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-2 {
   display: none;
   background-image: url('./images/obrazek-maska-small.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-3 {
   display: none;
   background-image: url('./images/obrazek-sundana-maska-small.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .header-orange {
