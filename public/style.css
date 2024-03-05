@@ -462,6 +462,10 @@ html {
     text-shadow: #141313 2px 2px 50px;
   }
 
+  .text-container-page2 {
+    margin-left: 141px;
+  }
+
   .text-section1-page2 {
     margin-bottom: 43px;
     margin-top: 48px;
@@ -635,7 +639,7 @@ html {
     margin: 0;
     padding: 0;
   }
-  
+
   .blur-bg:before {
     content: "";
     position: absolute;
