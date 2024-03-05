@@ -379,7 +379,6 @@ html {
 @media screen and (min-width: 992px) {
   .page-1 {
     background-image: url('./images/obrazek-telka-big.png');
-    height: 100%;
   }
 
   .page-2 {
@@ -659,7 +658,7 @@ html {
 
 
 @media screen and (min-width: 1390px) {
-  .partners-container-1 {
+  .partners-container1-page3 {
     padding-bottom: 0px;
   }
 
