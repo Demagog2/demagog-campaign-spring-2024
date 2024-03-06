@@ -233,6 +233,13 @@ html {
   bottom: 0;
 }*/
 
+.text-container-page3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+  text-shadow: #141313 2px 2px 50px;
+}
+
 .text-page3 {
   color: #FFF;
   font-family: Inter;
@@ -240,10 +247,6 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 23px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 0px;
-  text-shadow: #141313 2px 2px 50px;
 }
 
 .text-orange-page3 {
@@ -555,7 +558,7 @@ html {
     margin-left: 9px;
   }
 
-  .text-page3 {
+  .text-container-page3 {
     font-size: 30px;
     line-height: 40px;
     max-width: 690px;
