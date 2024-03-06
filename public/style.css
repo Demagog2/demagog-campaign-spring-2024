@@ -132,6 +132,35 @@ html {
   margin-top: 29px;
 }
 
+.blur-bg-page2 {
+  position: relative;
+  display: inline-block;
+}
+
+.blur-bg-page2 img {
+  position: relative;
+  z-index: 1;
+}
+
+.blur-bg-page2 p {
+  position: relative;
+  z-index: 1;
+}
+
+.blur-bg-page2:before {
+  top: 20px;
+  right: 0;
+  left: 20px;
+  bottom: 20px;
+  content: "";
+  position: absolute;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.20);
+  filter: blur(17.5px);
+  backdrop-filter: blur(2px);
+
+}
+
 .text-section1-page2,
 .text-section2-page2 {
   display: flex;
@@ -174,11 +203,35 @@ html {
   font-style: italic;
   font-weight: 400;
   line-height: 16px;
-  margin-left: 43px;
   margin-bottom: 30px;
   padding-right: 23px;
 
 }
+
+/*nachystany blur pozadi page3 mobile. Kdyby se pouzil, je treba jeste upravit rozmery*/
+
+/*.blur-bg {
+  position: relative;
+  display: inline-block;
+}
+
+.blur-bg p {
+  position: relative;
+  z-index: 1;
+}
+
+.blur-bg:before {
+  content: "";
+  position: absolute;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.20);
+  filter: blur(17.5px);
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}*/
 
 .text-page3 {
   color: #FFF;
@@ -499,7 +552,7 @@ html {
     font-weight: 400;
     line-height: 40px;
     margin-top: 12px;
-    margin-left: 150px;
+    margin-left: 9px;
   }
 
   .text-page3 {
@@ -637,7 +690,6 @@ html {
   .blur-bg p {
     position: relative;
     z-index: 1;
-
     margin: 0;
     padding: 0;
   }
@@ -645,16 +697,24 @@ html {
   .blur-bg:before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border-radius: 22px;
     background: rgba(0, 0, 0, 0.20);
     filter: blur(17.5px);
     backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .blur-bg-page2:before {
+    top: 35px;
+    right: 100px;
+    left: 125px;
+    bottom: 28px;
   }
 }
+
 
 
 @media screen and (min-width: 1390px) {
