@@ -234,6 +234,12 @@ html {
 }*/
 
 .text-container-page3 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
@@ -560,7 +566,7 @@ html {
 
   .text-container-page3 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 50px;
     max-width: 690px;
   }
 
