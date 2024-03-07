@@ -19,6 +19,7 @@ html {
   padding: 0;
   height: 100%;
   font-family: Inter, Helvetica, Arial, sans-serif;
+  background-color: black;
 }
 
 ul {
@@ -303,6 +304,7 @@ ul {
 
 .play-video-icon {
   background-image: url('./images/play-video.svg');
+  src: 'https://youtu.be/V9QM6XogqvU';
   width: 20px;
   height: 20px;
   background-color: inherit;
@@ -311,7 +313,6 @@ ul {
   border: none;
   cursor: pointer;
   margin-right: 8px;
-
 }
 
 .play-video-text {
@@ -324,6 +325,22 @@ ul {
   cursor: pointer;
   margin: 0px;
   margin-left: 8px;
+  background-color: inherit;
+  border-style: none;
+}
+
+.close {
+  color: #E5E7EB;
+  position: absolute;
+  top: -30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .partners-p {
@@ -605,6 +622,22 @@ ul {
     margin-left: 13.5px;
   }
 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: black;
+  }
+
+  .modal-video {
+    width: 100%;
+    height: 100%;
+  }
+
   .play-video-text:hover {
     color: #FFBF00;
   }
@@ -686,7 +719,8 @@ ul {
     padding: 40px;
   }
 
-  .blur-bg p, .blur-bg ul {
+  .blur-bg p,
+  .blur-bg ul {
     position: relative;
     z-index: 1;
     margin: 0;
