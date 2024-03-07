@@ -18,6 +18,11 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .logo-demagog {
@@ -61,7 +66,6 @@ html {
 
 .header-orange {
   color: #FFBF00;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
@@ -86,7 +90,6 @@ html {
 
 .header-white {
   color: #FFF;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -97,7 +100,6 @@ html {
 
 .header-white-page2 {
   color: #FFF;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -110,7 +112,6 @@ html {
 
 .header-page3 {
   color: #FFF;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -177,7 +178,6 @@ html {
 
 .text-white {
   color: #FFF;
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -189,7 +189,6 @@ html {
 
 .text-orange {
   color: #FFBF00;
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 800;
@@ -198,7 +197,6 @@ html {
 
 .additional-info {
   color: #FFF;
-  font-family: Inter;
   font-size: 12px;
   font-style: italic;
   font-weight: 400;
@@ -235,7 +233,6 @@ html {
 
 .text-container-page3 {
   color: #FFF;
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -248,7 +245,6 @@ html {
 
 .text-page3 {
   color: #FFF;
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -276,7 +272,6 @@ html {
 .buttons-page3 {
   color: #FFF;
   text-align: center;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -321,7 +316,6 @@ html {
 
 .play-video-text {
   color: #FFF;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -332,11 +326,8 @@ html {
   margin-left: 8px;
 }
 
-
-
 .partners-p {
   color: #E5E7EB;
-  font-family: Inter;
   font-size: 12px;
   font-style: italic;
   font-weight: 500;
@@ -436,7 +427,6 @@ html {
 .arrow-fwd-btn-page3 {
   visibility: hidden;
 }
-
 
 @media screen and (min-width: 992px) {
   .page-1 {
@@ -696,7 +686,7 @@ html {
     padding: 40px;
   }
 
-  .blur-bg p {
+  .blur-bg p, .blur-bg ul {
     position: relative;
     z-index: 1;
     margin: 0;
@@ -723,7 +713,6 @@ html {
     bottom: 28px;
   }
 }
-
 
 
 @media screen and (min-width: 1390px) {
