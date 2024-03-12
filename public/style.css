@@ -232,7 +232,7 @@ ul {
   bottom: 0;
 }*/
 
-.text-container-page3 {
+.text-page3 {
   color: #FFF;
   font-size: 15px;
   font-style: normal;
@@ -241,20 +241,24 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
-  text-shadow: #141313 2px 2px 50px;
-}
-
-.text-page3 {
-  color: #FFF;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 23px;
+  text-shadow: #141313 2px 2px 20px;
 }
 
 .text-orange-page3 {
   color: #FFBF00;
   font-weight: 800;
+}
+
+.list-page3 {
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+  text-shadow: #141313 2px 2px 20px;
 }
 
 .buttons-container1-page3 {
@@ -605,7 +609,13 @@ ul {
     margin-left: 9px;
   }
 
-  .text-container-page3 {
+  .text-page3 {
+    font-size: 30px;
+    line-height: 50px;
+    max-width: 690px;
+  }
+
+  .list-page3 {
     font-size: 30px;
     line-height: 50px;
     max-width: 690px;
@@ -760,14 +770,13 @@ ul {
     display: inline-block;
     margin-left: 170px;
     margin-bottom: 50px;
-    padding: 40px;
+    padding: 20px;
   }
 
   .blur-bg p,
   .blur-bg ul {
     position: relative;
     z-index: 1;
-    margin: 0;
     padding: 0;
   }
 
