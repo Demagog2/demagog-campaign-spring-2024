@@ -249,16 +249,31 @@ ul {
   font-weight: 800;
 }
 
+.link-orange {
+  color: #FFBF00;
+  text-decoration: underline;
+}
+
 .list-page3 {
+  display: flex;
   color: #FFF;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 23px;
-  padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
   text-shadow: #141313 2px 2px 20px;
+}
+
+.li-icon,
+.li-text {
+  display: inline;
+  margin: 8px 0px;
+}
+
+.li-icon {
+  margin-right: 10px;
 }
 
 .buttons-container1-page3 {
@@ -615,14 +630,19 @@ ul {
     max-width: 690px;
   }
 
+  .text-orange-page3 {
+    text-decoration-line: underline;
+  }
+
   .list-page3 {
     font-size: 30px;
     line-height: 50px;
     max-width: 690px;
+    padding-left: 20px;
   }
 
-  .text-orange-page3 {
-    text-decoration-line: underline;
+  .li-icon {
+    margin-right: 20px;
   }
 
   .buttons-container2-page3 {
